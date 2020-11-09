@@ -1,0 +1,251 @@
+=== Run information ===
+
+Scheme:weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     flag
+Instances:    15540
+Attributes:   801
+[list of attributes omitted]
+Test mode:10-fold cross-validation
+
+
+label(2): 
+LogScore Bayes: -1.030251020373055E7
+LogScore BDeu: -1.0308686469721947E7
+LogScore MDL: -1.030923357410583E7
+LogScore ENTROPY: -1.029130652095687E7
+LogScore AIC: -1.029502152095687E7
+
+
+Time taken to build model: 5.6 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       11962               76.9755 %
+Incorrectly Classified Instances      3578               23.0245 %
+Kappa statistic                          0.3627
+Mean absolute error                      0.2303
+Root mean squared error                  0.4783
+Relative absolute error                 82.9077 %
+Root relative squared error            128.3421 %
+Total Number of Instances            15540     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.787     0.315      0.926     0.787     0.851      0.777    0
+                 0.685     0.213      0.391     0.685     0.498      0.811    1
+Weighted Avg.    0.77      0.298      0.837     0.77      0.792      0.783
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 10188  2762 |     a = 0
+   816  1774 |     b = 1
+
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     flag
+Instances:    15540
+Attributes:   801
+[list of attributes omitted]
+Test mode:10-fold cross-validation
+
+
+Time taken to build model: 79.58 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12877               82.8636 %
+Incorrectly Classified Instances      2663               17.1364 %
+Kappa statistic                          0.378 
+Mean absolute error                      0.1807
+Root mean squared error                  0.4042
+Relative absolute error                 65.0288 %
+Root relative squared error            108.4681 %
+Total Number of Instances            15540     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.899     0.524      0.896     0.899     0.897      0.652    0
+                 0.476     0.101      0.486     0.476     0.481      0.652    1
+Weighted Avg.    0.829     0.454      0.827     0.829     0.828      0.652
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 11645  1305 |     a = 0
+  1358  1232 |     b = 1
+
+=== Run information ===
+
+Scheme:weka.classifiers.lazy.IBk -K 3 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     flag
+Instances:    15540
+Attributes:   801
+[list of attributes omitted]
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 3 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       13256               85.3024 %
+Incorrectly Classified Instances      2284               14.6976 %
+Kappa statistic                          0.3745
+Mean absolute error                      0.1681
+Root mean squared error                  0.339 
+Relative absolute error                 60.4988 %
+Root relative squared error             90.9598 %
+Total Number of Instances            15540     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.95      0.634      0.882     0.95      0.915      0.77     0
+                 0.366     0.05       0.596     0.366     0.454      0.77     1
+Weighted Avg.    0.853     0.536      0.835     0.853     0.838      0.77 
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 12307   643 |     a = 0
+  1641   949 |     b = 1
+
+=== Run information ===
+
+Scheme:weka.classifiers.lazy.KStar -B 20 -M a
+Relation:     flag
+Instances:    15540
+Attributes:   801
+[list of attributes omitted]
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+KStar Beta Verion (0.1b).
+Copyright (c) 1995-97 by Len Trigg (trigg@cs.waikato.ac.nz).
+Java port to Weka by Abdelaziz Mahoui (am14@cs.waikato.ac.nz).
+
+KStar options : -B 20 -M a  
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       13172               84.7619 %
+Incorrectly Classified Instances      2032               13.0759 %
+Kappa statistic                          0.4507
+Mean absolute error                      0.1338
+Root mean squared error                  0.3644
+Relative absolute error                 49.9116 %
+Root relative squared error            100.2289 %
+UnClassified Instances                 336                2.1622 %
+Total Number of Instances            15540     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.944     0.538      0.901     0.944     0.922      0.757    0
+                 0.462     0.056      0.612     0.462     0.527      0.794    1
+Weighted Avg.    0.866     0.46       0.855     0.866     0.859      0.763
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 12041   716 |     a = 0
+  1316  1131 |     b = 1
+
+=== Run information ===
+
+Scheme:weka.classifiers.bayes.NaiveBayes 
+Relation:     flag
+Instances:    15540
+Attributes:   801
+[list of attributes omitted]
+Test mode:10-fold cross-validation
+
+
+
+
+Time taken to build model: 1.26 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12596               81.0553 %
+Incorrectly Classified Instances      2944               18.9447 %
+Kappa statistic                          0.3133
+Mean absolute error                      0.1895
+Root mean squared error                  0.4347
+Relative absolute error                 68.1971 %
+Root relative squared error            116.6295 %
+Total Number of Instances            15540     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.888     0.577      0.885     0.888     0.887      0.677    0
+                 0.423     0.112      0.43      0.423     0.427      0.798    1
+Weighted Avg.    0.811     0.499      0.809     0.811     0.81       0.697
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 11500  1450 |     a = 0
+  1494  1096 |     b = 1
+
+=== Run information ===
+
+Scheme:weka.classifiers.trees.RandomForest -I 100 -K 0 -S 1
+Relation:     flag
+Instances:    15540
+Attributes:   801
+[list of attributes omitted]
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Random forest of 100 trees, each constructed while considering 10 random features.
+Out of bag error: 0.1237
+
+
+
+Time taken to build model: 19.48 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       13639               87.7671 %
+Incorrectly Classified Instances      1901               12.2329 %
+Kappa statistic                          0.4185
+Mean absolute error                      0.1971
+Root mean squared error                  0.2993
+Relative absolute error                 70.9487 %
+Root relative squared error             80.3003 %
+Total Number of Instances            15540     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.987     0.67       0.88      0.987     0.931      0.89     0
+                 0.33      0.013      0.838     0.33      0.473      0.89     1
+Weighted Avg.    0.878     0.561      0.873     0.878     0.855      0.89 
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 12785   165 |     a = 0
+  1736   854 |     b = 1
+

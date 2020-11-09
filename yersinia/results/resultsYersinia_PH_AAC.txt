@@ -1,0 +1,218 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     flag
+Instances:    15540
+Attributes:   41
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12194               78.4685 %
+Incorrectly Classified Instances      3346               21.5315 %
+Kappa statistic                          0.3688
+Mean absolute error                      0.2353
+Root mean squared error                  0.397 
+Relative absolute error                 84.7029 %
+Root relative squared error            106.5312 %
+Total Number of Instances            15540     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.814    0.361    0.919      0.814    0.863      0.384    0.811     0.952     0
+                 0.639    0.186    0.407      0.639    0.497      0.384    0.811     0.498     1
+Weighted Avg.    0.785    0.332    0.833      0.785    0.802      0.384    0.811     0.876     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 10539  2411 |     a = 0
+   935  1655 |     b = 1
+
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     flag
+Instances:    15540
+Attributes:   41
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12784               82.2651 %
+Incorrectly Classified Instances      2756               17.7349 %
+Kappa statistic                          0.334 
+Mean absolute error                      0.197 
+Root mean squared error                  0.3972
+Relative absolute error                 70.9142 %
+Root relative squared error            106.5781 %
+Total Number of Instances            15540     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.904    0.584    0.886      0.904    0.895      0.335    0.683     0.881     0
+                 0.416    0.096    0.464      0.416    0.439      0.335    0.683     0.359     1
+Weighted Avg.    0.823    0.502    0.815      0.823    0.819      0.335    0.683     0.794     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 11706  1244 |     a = 0
+  1512  1078 |     b = 1
+
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 3 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     flag
+Instances:    15540
+Attributes:   41
+
+IB1 instance-based classifier
+using 3 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12174               78.3398 %
+Incorrectly Classified Instances      3366               21.6602 %
+Kappa statistic                          0.3161
+Mean absolute error                      0.2638
+Root mean squared error                  0.3994
+Relative absolute error                 94.9623 %
+Root relative squared error            107.157  %
+Total Number of Instances            15540     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.835    0.475    0.898      0.835    0.865      0.322    0.753     0.917     0
+                 0.525    0.165    0.389      0.525    0.447      0.322    0.753     0.357     1
+Weighted Avg.    0.783    0.423    0.813      0.783    0.796      0.322    0.753     0.824     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 10813  2137 |     a = 0
+  1229  1361 |     b = 1
+
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.KStar -B 20 -M a
+Relation:     flag
+Instances:    15540
+Attributes:   41
+ 
+=== Classifier model (full training set) ===
+
+KStar Beta Verion (0.1b).
+Copyright (c) 1995-97 by Len Trigg (trigg@cs.waikato.ac.nz).
+Java port to Weka by Abdelaziz Mahoui (am14@cs.waikato.ac.nz).
+
+KStar options : -B 20 -M a 
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       12238               78.7516 %
+Incorrectly Classified Instances      3302               21.2484 %
+Kappa statistic                          0.3911
+Mean absolute error                      0.2139
+Root mean squared error                  0.4493
+Relative absolute error                 77.0088 %
+Root relative squared error            120.5731 %
+Total Number of Instances            15540     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.808    0.317    0.927      0.808    0.864      0.411    0.819     0.948     0
+                 0.683    0.192    0.416      0.683    0.517      0.411    0.819     0.520     1
+Weighted Avg.    0.788    0.296    0.842      0.788    0.806      0.411    0.819     0.877     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 10469  2481 |     a = 0
+   821  1769 |     b = 1
+
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     flag
+Instances:    15540
+Attributes:   41
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       10645               68.5006 %
+Incorrectly Classified Instances      4895               31.4994 %
+Kappa statistic                          0.2454
+Mean absolute error                      0.3217
+Root mean squared error                  0.4948
+Relative absolute error                115.8045 %
+Root relative squared error            132.7611 %
+Total Number of Instances            15540     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.685    0.317    0.915      0.685    0.784      0.284    0.745     0.930     0
+                 0.683    0.315    0.303      0.683    0.420      0.284    0.745     0.365     1
+Weighted Avg.    0.685    0.316    0.813      0.685    0.723      0.284    0.745     0.836     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 8875 4075 |    a = 0
+  820 1770 |    b = 1
+
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     flag
+Instances:    15540
+Attributes:   41
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 9.59 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       13615               87.6126 %
+Incorrectly Classified Instances      1925               12.3874 %
+Kappa statistic                          0.3747
+Mean absolute error                      0.2144
+Root mean squared error                  0.3032
+Relative absolute error                 77.1637 %
+Root relative squared error             81.3445 %
+Total Number of Instances            15540     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.997    0.730    0.872      0.997    0.931      0.470    0.883     0.968     0
+                 0.270    0.003    0.954      0.270    0.421      0.470    0.883     0.694     1
+Weighted Avg.    0.876    0.609    0.886      0.876    0.846      0.470    0.883     0.922     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 12916    34 |     a = 0
+  1891   699 |     b = 1
+
