@@ -18,7 +18,7 @@ I. Kosesoy et al, "Prediction of Host-Pathogen Protein Interactions Using Extend
 
 ### Code Folders:
 
-  - ProteinEncoding:  A Matlab toolbox of representing or encoding protein sequences as numerical vectors. The toolbox is downloaded from the https://sourceforge.net/projects/proteinencoding/ Citation: Zhang, W. & Ke, M.. (2014). Protein encoding: A Matlab toolbox of representing or encoding protein sequences as numerical vectors for bioinformatics. Journal of Chemical and Pharmaceutical Research. 6. 2000-2007. We have used this toolbox for AAC and AAP protein encoding methods. LBE kodlamasına ait kodlar Protein encoding klasörünün dışında yer almaktadır. "genFeatureMatrix" fonksiyonu ile verisetine ait öz nitelik vektörleri üretilmektedir.    
+  - ProteinEncoding:  A Matlab toolbox of representing or encoding protein sequences as numerical vectors. The toolbox is downloaded from the https://sourceforge.net/projects/proteinencoding/ Citation: Zhang, W. & Ke, M.. (2014). Protein encoding: A Matlab toolbox of representing or encoding protein sequences as numerical vectors for bioinformatics. Journal of Chemical and Pharmaceutical Research. 6. 2000-2007. We have used this toolbox for AAC and AAP protein encoding methods. The codes of the LBE encoding are located outside the Protein encoding folder. Feature vectors of the dataset are generated with the "genFeatureMatrix" function.    
   - mat2arff : A function to convert mat files to arff files
   - distFeature.m, subSequences.m : functions for LBE method
   - findSequenceMain: main function of protein encoding.  
